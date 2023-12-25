@@ -13,16 +13,15 @@
 
               let max = 1;
 			  let output = "";
+			let curr = arr[i];
 			  for(let i = 0; i < arr.length-1; i++){
 				  if(arr[i] == 1 || arr[i] == " "){
 					  output = "- infinity";
 				  }
 				  
 			  }
-			return output;
+             max = max<curr?"curr is max":"max";
 		}
-		let res = output;
-			console.log(res);
 
 		secondHighest();
 
